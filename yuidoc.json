@@ -1,8 +1,8 @@
 {
-  "name": "{{project_name}}",
-  "description": "{{element_desc}}",
+  "name": "Polymer WebAuthn",
+  "description": "A Polymer compeontent for performing W3C WebAuthn registration and authentication",
   "version": "0.0.1",
-  "url": "{{github_repo_url}}",
+  "url": "https://github.com/apowers313/polymer-webauthn",
   "logo": "http://ato.ms/images/atomslogo.png",
   "options": {
     "outdir": "./docs"

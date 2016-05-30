@@ -12,7 +12,7 @@ if [ -z "$TRAVIS_REPO_SLUG" ]; then
 fi
 
 if [ -z "$TRAVIS_REPO_SLUG" ]; then
-	TRAVIS_REPO_SLUG='{{github_slug}}'
+	TRAVIS_REPO_SLUG='apowers313/polymer-webauthn'
 fi
 
 echo "Deploy Docs: Setting GitHub ref..."
@@ -30,10 +30,10 @@ fi
 
 # inside this git repo we'll pretend to be a new user
 echo "Deploy Docs: Doing git config..."
-echo "Git Username: {{git_username}}"
-git config user.name "{{git_username}}"
-echo "Git Email: {{git_email}}"
-git config user.email "{{git_email}}"
+echo "Git Username: Adam Powers"
+git config user.name "Adam Powers"
+echo "Git Email: apowers@ato.ms"
+git config user.email "apowers@ato.ms"
 
 # echo "Creating CHANGELOG.md ..."
 # if [ -z "$PKG_VERSION" ]; then

@@ -17,7 +17,7 @@ module.exports = {
             // browsers: ['default']
         },
         sauce: {
-            name: "{{element_name}} :: " + require("os").hostname() + " :: " + new Date().toLocaleString(),
+            name: "web-authn :: " + require("os").hostname() + " :: " + new Date().toLocaleString(),
             build: process.env.TRAVIS_BUILD_NUMBER,
             tag: process.env.TRAVIS_BRANCH || process.env.TRAVIS_PULL_REQUEST,
             disabled: false,
@@ -28,7 +28,7 @@ module.exports = {
             reporters: ["text-summary", "lcov", "html"],
             include: [
                 "**/*.js",
-                //"/{{element_name}}.html"
+                //"/web-authn.html"
             ],
             exclude: [
                 "/polymer/polymer.js",
